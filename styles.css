@@ -421,11 +421,15 @@ p {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  padding: 0;
+  padding: 1rem 0;        /* match nav__mobile-link padding exactly */
+  padding-left: 0 !important; /* never indent — override active state */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0;
 }
+/* hide the dot indicator — chevron serves this purpose */
+.nav__mobile-sub-toggle::before { display: none !important; }
 .nav__mobile-sub-toggle svg {
   flex-shrink: 0;
   transition: transform 0.3s var(--ease);
