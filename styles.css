@@ -446,10 +446,12 @@ p {
   gap: 0.6rem;
   font-size: 0.82rem;
   color: rgba(255,255,255,0.45);
-  transition: color 0.3s;
+  border-bottom: 1px solid rgba(240,165,0,0.3);
+  padding-bottom: 0.15rem;
+  transition: color 0.3s, border-color 0.3s;
   width: 100%;
 }
-.nav__mobile-footer a:hover { color: var(--accent); }
+.nav__mobile-footer a:hover { color: var(--accent); border-color: var(--accent); }
 .nav__mobile-footer svg { flex-shrink: 0; }
 
 /* ── Hero ── */
