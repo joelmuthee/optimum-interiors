@@ -421,17 +421,18 @@ p {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  padding: 1rem 0;        /* match nav__mobile-link padding exactly */
-  padding-left: 0 !important; /* never indent — override active state */
+  padding: 1rem 0;
+  padding-left: calc(6px + 0.75rem) !important; /* match dot + gap offset of sibling links */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+  justify-content: flex-start;
+  gap: 0;
 }
-/* keep dot in layout (for alignment) but always invisible — chevron serves as indicator */
-.nav__mobile-sub-toggle::before { opacity: 0 !important; }
+/* hide dot — chevron serves as indicator */
+.nav__mobile-sub-toggle::before { display: none !important; }
 .nav__mobile-sub-toggle svg {
   flex-shrink: 0;
+  margin-left: auto; /* push chevron to the far right */
   transition: transform 0.3s var(--ease);
   opacity: 0.5;
 }
