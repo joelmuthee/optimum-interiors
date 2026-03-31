@@ -422,7 +422,7 @@ p {
   width: 100%;
   text-align: left;
   padding: 1rem 0;        /* match nav__mobile-link padding exactly */
-  padding-left: 0 !important; /* never indent — override active state */
+  padding-left: calc(6px + 0.75rem) !important; /* align text with other nav links (dot width + gap) */
   display: flex;
   align-items: center;
   justify-content: space-between;
