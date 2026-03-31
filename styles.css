@@ -1694,6 +1694,10 @@ a[href^="mailto:"]:hover {
   .service-detail.reverse .service-detail__body,
   .service-detail__body   { grid-column: 1; grid-row: 3; }
   .contact-grid { grid-template-columns: 1fr; }
+  .contact-info-card { order: 2; }
+  .reveal-right { order: 1; }
+  .ghl-wrap { overflow: hidden; }
+  .ghl-wrap #inline-l16tTdaqvg0CG0wSsarz { margin-top: -60px; }
   .process-steps { grid-template-columns: repeat(2, 1fr); }
   .process-steps::before { display: none; }
 }
