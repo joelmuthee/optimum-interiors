@@ -518,6 +518,7 @@ p {
 .hero__bg {
   position: absolute;
   inset: 0;
+  background-color: #0D1B3E; /* instant dark fallback while image loads */
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
