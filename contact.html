@@ -205,9 +205,17 @@
             <p style="margin-bottom:2rem;">Fill in the form below and we'll get back to you within 24 hours with a personalised response.</p>
 
             <div class="ghl-wrap">
+              <div class="ghl-skeleton" id="ghlSkeleton" aria-hidden="true">
+                <div class="ghl-skeleton__row"></div>
+                <div class="ghl-skeleton__row"></div>
+                <div class="ghl-skeleton__row ghl-skeleton__row--half"></div>
+                <div class="ghl-skeleton__row ghl-skeleton__row--half"></div>
+                <div class="ghl-skeleton__row"></div>
+                <div class="ghl-skeleton__btn"></div>
+              </div>
               <iframe
                   src="https://link.essenceautomations.com/widget/form/l16tTdaqvg0CG0wSsarz"
-                  style="width:100%;height:763px;border:none;border-radius:3px"
+                  style="width:100%;height:763px;border:none;border-radius:3px;opacity:0;transition:opacity 0.3s"
                   id="inline-l16tTdaqvg0CG0wSsarz"
                   data-layout="{'id':'INLINE'}"
                   data-trigger-type="alwaysShow"
@@ -221,6 +229,8 @@
                   data-layout-iframe-id="inline-l16tTdaqvg0CG0wSsarz"
                   data-form-id="l16tTdaqvg0CG0wSsarz"
                   title="Optimum Interiors Quote Form"
+                  fetchpriority="high"
+                  onload="this.style.opacity='1';var s=document.getElementById('ghlSkeleton');if(s)s.style.display='none';"
               ></iframe>
               <script src="https://link.essenceautomations.com/js/form_embed.js" async></script>
             </div>
