@@ -13,8 +13,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="canonical" href="https://optimum-interiors.essenceautomations.com/" />
 
-  <!-- Hero image — preload so browser fetches it immediately, not after CSS parse -->
-  <link rel="preload" as="image" fetchpriority="high" href="imgs/IMG-20220116-WA0000-3.jpg" />
+  <!-- Hero image — preload WebP (48% smaller than JPEG) -->
+  <link rel="preload" as="image" fetchpriority="high"
+        href="imgs/hero.webp"
+        imagesrcset="imgs/hero-mobile.webp 800w, imgs/hero.webp 1600w"
+        imagesizes="100vw" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -165,7 +168,7 @@
 
     <!-- ══ HERO ══ -->
     <section class="hero" id="hero" aria-label="Hero">
-      <div class="hero__bg" style="background-image: url('imgs/IMG-20220116-WA0000-3.jpg');" role="img" aria-label="Luxury interior design by Optimum Interiors"></div>
+      <div class="hero__bg" style="background-image: url('imgs/hero.webp');" role="img" aria-label="Luxury interior design by Optimum Interiors"></div>
       <div class="hero__content">
         <p class="hero__label">Nairobi's Leading Interior Design Studio</p>
         <h1 class="hero__title">Transforming Spaces,<br><em>Elevating Lives</em></h1>
