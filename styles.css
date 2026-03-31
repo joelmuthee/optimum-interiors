@@ -1704,6 +1704,7 @@ a[href^="mailto:"]:hover {
     text-align: center;
   }
   .footer__logo-img { margin: 0 auto; }
+  .footer__brand-desc { margin-left: auto; margin-right: auto; text-align: center; }
   .footer__socials { justify-content: center; }
   .footer__links { align-items: center; }
   .footer__contact-item { justify-content: center; }
